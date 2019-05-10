@@ -7,7 +7,7 @@
 # Imports all Drug_LookUp data into sqlite db
 
 DATA=../data/raw
-DB=../data/medi.db
+DB=test.db
 
 # Create Drug_LookUp Table in database
 sqlite3 $DB "CREATE TABLE Drug_LookUp

@@ -14,3 +14,8 @@ DB=../data/medi.db
 # Run extra SQL setup scripts for adams notebooks
 sqlite3 $DB < impliedcondition.sql
 sqlite3 $DB < postcodes_geo.sql
+
+#Create indexes
+sqlite3 $DB "CREATE INDEX PatientID_Index ON implied_condition(Patient_ID);"
+sqlite3 $DB "CREATE INDEX ChronicIllness_Index ON implied_condition(ChronicIllness);"
+

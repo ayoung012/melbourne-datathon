@@ -7,7 +7,7 @@
 # Imports all patients data into sqlite db
 
 DATA=../data/raw
-DB=../data/medi.db
+DB=test.db
 
 # Create Patients table in database
 sqlite3 $DB "CREATE TABLE patients
